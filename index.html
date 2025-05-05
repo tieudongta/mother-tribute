@@ -345,8 +345,28 @@
 
   <section id="guestbook">
     <h2>Leave a Message</h2>
-    <form action="#">
-      <textarea placeholder="Share your memories or thoughts here..." rows="4" cols="50"></textarea>
+    <form action="https://formsubmit.co/nhiem.nguyentri@gmail.com" method="POST">
+      <!-- Prevent spam (optional) -->
+      <input type="hidden" name="_honeypot" value="">
+  
+      <!-- Customize the email subject -->
+      <input type="hidden" name="_subject" value="New Tribute Site Message">
+  
+      <!-- Redirect to a thank-you page after submit (optional) -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+  
+      <!-- Your guest’s name -->
+      <label for="name">Name (optional):</label>
+      <input type="text" id="name" name="name" />
+  
+      <!-- Their email, if you want to reply -->
+      <label for="email">Email (optional):</label>
+      <input type="email" id="email" name="email" />
+  
+      <!-- The actual message -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Share your memories or thoughts here..." rows="4" required></textarea>
+  
       <button type="submit">Submit</button>
     </form>
   </section>
