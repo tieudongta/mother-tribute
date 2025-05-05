@@ -1,4 +1,10 @@
 /* Basic styles */
+@import url(href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap"');
+
+
+.vn {
+  font-family: 'Cormorant Garamond', sans-serif;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,7 +13,7 @@ body {
     background-color: #f4f4f9;
   }
   
-  header {
+  header, footer {
     background-color: #5D3F6B;
     color: white;
     padding: 20px;
@@ -156,4 +162,11 @@ body {
   }
   .lang-switcher a {
     color: white;
+  }
+  #content {
+    width: 80%;
+    max-width: 900px; /* Optional: for better readability on large screens */
+    margin: 0 auto;    /* This centers it horizontally */
+    padding: 20px;     /* Optional: adds space inside the article */
+    line-height: 1.6;  /* Improves readability */
   }
