@@ -151,3 +151,9 @@ body {
     to { opacity: 1; transform: scale(1); }
   }
     
+  nav{
+    color: white;
+  }
+  .lang-switcher a {
+    color: white;
+  }
