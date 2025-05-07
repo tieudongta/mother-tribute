@@ -170,6 +170,13 @@ body {
     padding: 20px;     /* Optional: adds space inside the article */
     line-height: 1.6;  /* Improves readability */
   }
+  @media (max-width: 767px) {
+    #content{
+      width: 100%;
+      padding: 10px;
+      margin: auto;
+    }
+  }
   .hidden{
     display: none;
   }
@@ -180,7 +187,7 @@ body {
   .inline-img{
     float: left; 
     margin: 0 1em 0 0; 
-    width: 40%; 
+    width: 40%;
     height: auto;
     background: #ddd;        /* Light gray frame background */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
@@ -188,7 +195,7 @@ body {
   .inline-img-left{
     float: left; 
     margin: 0 1em 0 0; 
-    max-width: 30%; 
+    width: 30%;
     height: auto;
     border-radius: 10px;
     background: #ddd;        /* Light gray frame background */
@@ -197,9 +204,17 @@ body {
   .inline-img-right{
     float: right; 
     margin: 0 1em 0 0; 
-    max-width: 30%; 
+    width: 30%;
     height: auto;
     border-radius: 10px;
     background: #ddd;        /* Light gray frame background */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  }
+  @media (max-width: 767px) {
+    .inline-img.responsive, .inline-img-left.responsive, .inline-img-right.responsive {
+      width: 100% !important; /* full width on smaller devices */
+      margin: 0 0 0 0; 
+      clear: both;
+      margin-bottom: 1em;
+    }
   }
