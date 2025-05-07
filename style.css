@@ -177,3 +177,29 @@ body {
     cursor: pointer;
     color: rgb(246, 44, 168);
   }
+  .inline-img{
+    float: left; 
+    margin: 0 1em 0 0; 
+    width: 40%; 
+    height: auto;
+    background: #ddd;        /* Light gray frame background */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  }
+  .inline-img-left{
+    float: left; 
+    margin: 0 1em 0 0; 
+    max-width: 30%; 
+    height: auto;
+    border-radius: 10px;
+    background: #ddd;        /* Light gray frame background */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  }
+  .inline-img-right{
+    float: right; 
+    margin: 0 1em 0 0; 
+    max-width: 30%; 
+    height: auto;
+    border-radius: 10px;
+    background: #ddd;        /* Light gray frame background */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  }
