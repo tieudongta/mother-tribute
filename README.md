@@ -31,7 +31,7 @@ This webpage serves as a digital memorial — a simple yet elegant space to refl
 
 ## 📷 Preview
 
-*(Insert a screenshot or a link to a live demo here)*
+(https://tieudongta.github.io/mother-tribute/index.html)
 
 ---
 
