@@ -170,3 +170,10 @@ body {
     padding: 20px;     /* Optional: adds space inside the article */
     line-height: 1.6;  /* Improves readability */
   }
+  .hidden{
+    display: none;
+  }
+  .section-title:hover{
+    cursor: pointer;
+    color: rgb(246, 44, 168);
+  }
