@@ -1,7 +1,4 @@
-/* Basic styles */
-@import url(href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap"');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Estonia&family=Protest+Revolution&display=swap');
 .vn {
   font-family: 'Cormorant Garamond', sans-serif;
 }
@@ -12,7 +9,28 @@ body {
     padding: 0;
     background-color: #f4f4f9;
   }
-  
+  p{
+    font-family: 'Estonia', cursive;
+    font-size: 2em;
+  }
+  #in-memory {
+    font-family: 'Estonia', cursive;
+    color: #f8f8f8;
+    margin: 0;
+  }
+  p:not(#in-memory):first-letter {
+    font-size: 1.5em;
+    float: left;
+    line-height: 1;
+    padding: 0 8px;
+    margin-right: -0.1em;
+    color: #540e75;
+  }
+  p em {
+    font-weight:200;
+    color: #540e75;
+
+  }
   header, footer {
     background-color: #5D3F6B;
     color: white;
@@ -35,7 +53,9 @@ body {
   h2 {
     color: #5D3F6B;
   }
-  
+  h1, h2,h3 {
+    font-family: 'Protest Revolution', cursive;
+  }
   /* Photo Album styles */
   .photo-gallery {
     display: grid;
@@ -184,31 +204,35 @@ body {
     cursor: pointer;
     color: rgb(246, 44, 168);
   }
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(203, 146, 174, 0.893); /* Subtle shadow for depth */
+  }
   .inline-img{
     float: left; 
-    margin: 0 1em 0 0; 
+    margin: 1.5em 1em -0.7em 0; 
     width: 40%;
     height: auto;
-    background: #ddd;        /* Light gray frame background */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
   }
   .inline-img-left{
     float: left; 
-    margin: 0 1em 0 0; 
+    margin: 1.5em 1em -0.7em 0; 
     width: 30%;
     height: auto;
     border-radius: 10px;
     background: #ddd;        /* Light gray frame background */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(203, 146, 174, 0.893); /* Subtle shadow for depth */
   }
   .inline-img-right{
     float: right; 
-    margin: 0 1em 0 0; 
+    margin: 1.5em 1em -0.7em 1em; 
     width: 30%;
     height: auto;
     border-radius: 10px;
     background: #ddd;        /* Light gray frame background */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(203, 146, 174, 0.893); /* Subtle shadow for depth */
   }
   @media (max-width: 767px) {
     .inline-img.responsive, .inline-img-left.responsive, .inline-img-right.responsive {
@@ -217,4 +241,8 @@ body {
       clear: both;
       margin-bottom: 1em;
     }
+  }
+  .lang-switcher{
+    font-weight: lighter;
+    font-size: small;
   }
